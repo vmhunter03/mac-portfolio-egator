@@ -1,10 +1,8 @@
 import React from "react";
 import "./experience.css";
-import { BsPatchCheckFill } from "react-icons/bs";
 import { SiHtml5 } from "react-icons/si";
 import { FaCss3 } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
-import { IoLogoJavascript } from "react-icons/io";
 import { FaReact } from "react-icons/fa";
 import { BsBootstrap } from "react-icons/bs";
 

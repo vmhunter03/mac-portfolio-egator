@@ -30,7 +30,7 @@ const Contact = () => {
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
             <h5>vmhunterjob@gmail.com</h5>
-            <a href="mailto:vmhunterjob@gmail.com" target="_blank">
+            <a href="mailto:vmhunterjob@gmail.com" target="_blank" rel="noreferrer" >
               Send a message
             </a>
           </article>
@@ -41,6 +41,7 @@ const Contact = () => {
             <a
               href="https://api.whatsapp.com/send?phone=+6395617792"
               target="_blank"
+              rel="noreferrer" 
             >
               Contact Me!
             </a>
@@ -49,7 +50,7 @@ const Contact = () => {
             <BsTwitter className="contact__option-icon" />
             <h4>Twitter</h4>
             <h5>@HalidMC</h5>
-            <a href="https://twitter.com/ronnoche" target="_blank">
+            <a href="https://twitter.com/ronnoche" target="_blank" rel="noreferrer" >
               Say hi!
             </a>
           </article>
