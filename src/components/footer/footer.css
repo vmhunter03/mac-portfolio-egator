@@ -1,6 +1,6 @@
 footer {
   background: var(--color-primary);
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   text-align: center;
   font-size: 0.9rem;
   margin-top: 5rem;
@@ -11,10 +11,30 @@ footer a {
 }
 
 .footer__copyright {
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
   color: var(--color-bg);
 }
-
+.footer__socials {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+.footer__socials a {
+  background: var(--color-bg);
+  color: var(--color-white);
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  display: flex;
+  border: 1px solid transparent;
+}
+.footer__socials a:hover {
+  background: transparent;
+  color: var(--color-bg);
+  border-color: var(--color-bg);
+}
 /* =================== MEDIA QUERIES (SMALL DEVICES / PHONES) =================== */
 
 @media screen and (max-width: 600px) {

@@ -8,17 +8,20 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer__copyright">
+        <div className="footer__socials">
+          <a href="https://twitter.com/HalidMC">Twitter</a>
+          <a href="https://github.com/vmhunter03">Github</a>
+          <a href="https://www.linkedin.com/in/halid-macalangcom-6b306211b/">
+            Linkedin
+          </a>
+        </div>
         <small>
-          Copyright &copy; 2022 <strong>Ronnie Noche</strong> | All Rights
+          Copyright &copy; 2022 <strong>Halid Macalangcom</strong> | All Rights
           Reserved. <br />
-          This is licensed under a
-          <a
-            href="https://creativecommons.org/licenses/by-nc/4.0/"
-            target="_blank"
-          >
+          Coded & Design by
+          <a href="https://www.buymeacoffee.com/egator/" target="_blank">
             {" "}
-            Creative Commons Attribution-NonCommercial 4.0 International
-            License.
+            EGATOR
           </a>
         </small>
       </div>
