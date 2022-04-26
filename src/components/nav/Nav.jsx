@@ -1,12 +1,12 @@
 import React from "react";
 import "./nav.css";
 import { AiOutlineHome } from "react-icons/ai";
-import { BsInfoSquare } from "react-icons/bs";
-import { BsBookmarkCheck } from "react-icons/bs";
-import { FaRegHandshake } from "react-icons/fa";
-import { MdMailOutline } from "react-icons/md";
+import { IoBookmarksOutline } from "react-icons/io5";
+import { MdOutlineNote } from "react-icons/md";
+import { HiOutlineMail } from "react-icons/hi";
 import { useState } from "react";
-function Nav() {
+
+const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
   return (
     <nav>
@@ -15,43 +15,32 @@ function Nav() {
         onClick={() => setActiveNav("#")}
         className={activeNav === "#" ? "active" : ""}
       >
-        {" "}
         <AiOutlineHome />
       </a>
-      <a
-        href="#about"
-        onClick={() => setActiveNav("#about")}
-        className={activeNav === "#about" ? "active" : ""}
-      >
-        {" "}
-        <BsInfoSquare />
-      </a>
+
       <a
         href="#experience"
         onClick={() => setActiveNav("#experience")}
         className={activeNav === "#experience" ? "active" : ""}
       >
-        {" "}
-        <BsBookmarkCheck />
+        <IoBookmarksOutline />
       </a>
       <a
-        href="#services"
-        onClick={() => setActiveNav("#services")}
-        className={activeNav === "#services" ? "active" : ""}
+        href="#portfolio"
+        onClick={() => setActiveNav("#portfolio")}
+        className={activeNav === "#portfolio" ? "active" : ""}
       >
-        {" "}
-        <FaRegHandshake />
+        <MdOutlineNote />
       </a>
       <a
         href="#contact"
         onClick={() => setActiveNav("#contact")}
         className={activeNav === "#contact" ? "active" : ""}
       >
-        {" "}
-        <MdMailOutline />
+        <HiOutlineMail />
       </a>
     </nav>
   );
-}
+};
 
 export default Nav;

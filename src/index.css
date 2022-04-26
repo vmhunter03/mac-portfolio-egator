@@ -11,18 +11,18 @@
 }
 
 :root {
-  --color-bg: #1f1f38;
-  --color-bg-variant: #2c2c6c;
-  --color-primary: #4db5ff;
-  --color-primary-variant: rgba(77, 181, 255, 0.4);
-  --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.6);
+  --color-bg: #1F1D36;
+  --color-bg-variant: #3F3351;
+  --color-primary: #d388c3;
+  --color-primary-variant: #rgba(244, 211, 94, 0.4);
+  --color-white: #E9A6A6;
+  --color-light: rgba(250, 255, 175, 0.7);
 
   --transition: all 400ms ease;
 
   --container-width-lg: 75%;
   --container-width-md: 86%;
-  --container-width-ms: 90%;
+  --container-width-sm: 90%;
 }
 
 html {
@@ -38,10 +38,15 @@ body {
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(../src/assets/bg-texture.png);
+  /* background-image: url(../src/assets/bg-texture.png); */
 }
 
-/* ================== General Styles ====================== */
+/* ===================
+======================== 
+    General Styles
+======================== 
+ =================== */
+
 .container {
   width: var(--container-width-lg);
   margin: 0 auto;
@@ -54,6 +59,7 @@ h4,
 h5 {
   font-weight: 500;
 }
+
 h1 {
   font-size: 2.5rem;
 }
@@ -104,7 +110,7 @@ a:hover {
 }
 
 .btn-primary {
-  background: var(--color-primary);
+  background-color: var(--color-primary);
   color: var(--color-bg);
 }
 
@@ -114,22 +120,37 @@ img {
   object-fit: cover;
 }
 
-/* ===================== MEDIA QUERIES (MEDIUM DEVICES) ============================ */
+/* ===================
+======================== 
+    MEDIA QUERIES
+    (MEDIUM DEVICES /
+        TABLETS)
+======================== 
+ =================== */
+
 @media screen and (max-width: 1024px) {
   .container {
     width: var(--container-width-md);
   }
+
   section {
-      margin-top: 6rem;
-      height: 100vh;
+    margin-top: 6rem;
   }
 }
-/* ===================== MEDIA QUERIES (SMALL DEVICES) ============================ */
+/* ===================
+======================== 
+    MEDIA QUERIES
+    (SMALL DEVICES /
+        PHONES)
+======================== 
+ =================== */
+
 @media screen and (max-width: 600px) {
-    .container {
-      width: var(--container-width-sm);
-    }
-    section > h2 {
-        margin-bottom: 2rem;
-    }
+  .container {
+    width: var(--container-width-sm);
   }
+
+  section > h2 {
+    margin-bottom: 2rem;
+  }
+}
