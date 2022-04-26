@@ -1,9 +1,6 @@
 import React from "react";
 import "./about.css";
 import ME from "../../assets/me-about.png";
-import { GiTeacher } from "react-icons/gi";
-import { GiPublicSpeaker } from "react-icons/gi";
-import { FaCode } from "react-icons/fa";
 import CTA from "./CTA";
 import HeaderSocials from "./HeaderSocials";
 
