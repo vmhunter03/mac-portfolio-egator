@@ -1,60 +1,27 @@
 import React from "react";
 import "./portfolio.css";
-import IMG1 from "../../assets/IMG1.gif";
-import IMG2 from "../../assets/portfolio2.png";
-import IMG3 from "../../assets/portfolio3.png";
-import IMG4 from "../../assets/portfolio4.png";
-import IMG5 from "../../assets/portfolio5.png";
-import IMG6 from "../../assets/portfolio6.png";
+import IMG1 from "../../assets/IMG1.png";
+import IMG2 from "../../assets/IMG2.png";
 
 const data = [
   {
     id: 1,
     image: IMG1,
-    title: "Meditation App",
-    details: "React Native app for Meditation",
-    github: "https://github.com/ronnoche/meditation-app",
-    demo: "https://ron-meditationapp.netlify.app/",
+    title: "Memory Game",
+    details:
+      "I built this project as a part of the React Basics module from course Build Web Apps with React & Firebase by The Net Ninja (Shaun Pelling).",
+    github: "https://github.com/vmhunter03/onepiececard",
+    demo: "https://opcardmatching.netlify.app",
   },
   {
     id: 2,
     image: IMG2,
-    title: "Finance Tracking App",
-    details: "React Native app for Tracking Finances",
-    github: "https://github.com/ronnoche/finance_tracking-app",
-    demo: "https://ron-moneygerapp.netlify.app/",
-  },
-  {
-    id: 3,
-    image: IMG3,
-    title: "Prespond",
-    details: "A responsive website for disaster relief operations.",
-    github: "https://github.com/ronnoche/responsive_web",
-    demo: "https://ron-prespond.netlify.app/",
-  },
-  {
-    id: 4,
-    image: IMG4,
-    title: "Five Simple JS Apps",
-    details: "Simple 5 JavaScript games bundled in a React Website.",
-    github: "https://github.com/ronnoche/games_web-app",
-    demo: "https://ron-gameswebapp.netlify.app/",
-  },
-  {
-    id: 5,
-    image: IMG5,
-    title: "Audio Book Reader",
-    details: "Book to Audio JavaScript app",
-    github: "https://github.com/ronnoche/AudioBook_Reader",
-    demo: "https://ron-audiobookreader.netlify.app/",
-  },
-  {
-    id: 6,
-    image: IMG6,
-    title: "Personal Portfolio",
-    details: "This Website's Github Repo",
-    github: "https://github.com/ronnoche/ronnoche-portfolio",
-  },
+    title: "My Personal Website v1.0",
+    details:
+      "",
+    github: "https://github.com/vmhunter03/mac-portfolio-egator",
+    demo: "https://halidmacalangcom.vercel.app",
+  }
 ];
 
 const Portfolio = () => {
@@ -67,7 +34,7 @@ const Portfolio = () => {
         {data.map(({ id, image, title, details, github, demo }) => (
           <article ke={id} className="portfolio__item">
             <div className="portfolio__item-image">
-              <a href={demo} target="_blank"  rel="noreferrer">
+              <a href={demo} target="_blank" rel="noreferrer">
                 <img src={image} alt={title} />
               </a>
             </div>
@@ -79,10 +46,15 @@ const Portfolio = () => {
             </div>
 
             <div className="portfolio__item-cta">
-              <a href={github} target="_blank" className="btn" rel="noreferrer" >
+              <a href={github} target="_blank" className="btn" rel="noreferrer">
                 Github Repository
               </a>
-              <a href={demo} target="_blank" className="btn btn-primary"  rel="noreferrer">
+              <a
+                href={demo}
+                target="_blank"
+                className="btn btn-primary"
+                rel="noreferrer"
+              >
                 Live Demo
               </a>
             </div>
