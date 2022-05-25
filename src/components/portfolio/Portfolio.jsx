@@ -2,6 +2,7 @@ import React from "react";
 import "./portfolio.css";
 import IMG1 from "../../assets/IMG1.png";
 import IMG2 from "../../assets/IMG2.png";
+import IMG3 from "../../assets/IMG3.png";
 
 const data = [
   {
@@ -9,7 +10,8 @@ const data = [
     image: IMG1,
     title: "Memory Game",
     details:
-      "I built this project as a part of the React Basics module from course Build Web Apps with React & Firebase by The Net Ninja (Shaun Pelling).",
+      "", 
+      // I built this project as a part of the React Basics module from course Build Web Apps with React & Firebase by The Net Ninja (Shaun Pelling).
     github: "https://github.com/vmhunter03/onepiececard",
     demo: "https://opcardmatching.netlify.app",
   },
@@ -21,6 +23,15 @@ const data = [
       "",
     github: "https://github.com/vmhunter03/mac-portfolio-egator",
     demo: "https://halidmacalangcom.vercel.app",
+  },
+  {
+    id: 3,
+    image: IMG3,
+    title: "To Do List",
+    details:
+      "",
+    github: "https://github.com/vmhunter03/todolist_txs",
+    demo: "https://vm-to-do-list.netlify.app",
   }
 ];
 
